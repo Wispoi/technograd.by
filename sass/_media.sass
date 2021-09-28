@@ -1,0 +1,1637 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+@media only screen and (max-width : 1600px)
+	/**/
+@media only screen and (max-width : 1439px)
+	.category-bottom
+		flex-wrap: wrap
+		margin-top: 14px
+		.category-item
+			width: 50%
+			margin-top: 20px
+	.article+.products
+		margin-top: 0
+	.footer::before
+		height: 193px
+		width: 7px
+		right: 12px
+		bottom: 23px
+		background-size: contain
+	.footer::after
+		right: -54px
+		width: 190px	
+		height: 380px
+		background-size: contain
+	.footer
+		background-size: 344px
+		background-position: calc(100% + 95px) -195px
+	.section-wrapper::after
+		background-position: 200px center
+		background-size: 900px
+	.solutions.with-bg
+		padding-top: 30px
+		padding-bottom: 30px
+	.solutions.with-bg .section-header
+		margin-bottom: 32px
+	.article-content table th, .article-content table td
+		font-size: 14px
+	.article-content ul li, .article-content ol li
+		font-size: 14px
+	.article-content .h2
+		margin-top: 50px
+		margin-bottom: 30px
+	.article-content>img
+		margin-bottom: 30px
+	.article-content table
+		margin: 30px 0
+	.bottom-wrapper .main-btn
+		background: $second
+		font-size: 14px
+		&:hover
+			background: $hover
+	.solutions .section-description
+		margin-top: 30px
+	.subheader + .breadcrumbs
+		padding-top: 118px
+		margin-top: 0
+	.accordion-footer .border-btn
+		height: 40px
+	.product-group
+		grid-template-columns: repeat(6,1fr)
+	section.inner-title+section
+		margin-top: 50px
+	section
+		margin: 50px 0
+	.with-bg
+		padding: 50px 0
+	.breadcrumbs
+		margin-top: 50px
+		ul li 
+			&::after
+				font-size: 10px!important
+			a
+				font-size: 10px
+	.header-nav
+		display: none
+	.filter-wrapper.scrolled .filter
+		top: 60px
+		height: 60px
+	.header-nav__footer.header-nav__footer
+		display: flex
+		flex-direction: column
+		background: #F5F5F5
+		padding-top: 22px!important
+		padding-bottom: 80px!important
+		ul
+			li
+				margin-bottom: 11px
+				a, span
+					display: flex
+					align-items: flex-start
+					font-size: 14px
+					white-space: normal
+					line-height: 18px
+					img
+						margin-right: 10px
+						margin-top: 2px
+						width: 15px
+					span:only-child
+						margin-left: 25px
+	.footer-row
+		padding-bottom: 10px
+		position: relative
+		&:first-child
+			margin-bottom: 20px
+			&::after
+				content: ''
+				position: absolute
+				bottom: 0
+				width: calc(100% + 30px)
+				left: -15px
+				border-bottom: 1px solid #DEE1E3
+	.bottom-wrapper
+		position: fixed
+		max-width: 100%
+		width: 320px
+		background: #fff
+		padding: 15px
+		left: 0
+		bottom: 0
+		display: block
+		z-index: 999
+		transition: all .3s ease
+		transform: translateX(-100%)
+		.main-btn
+			width: 100%
+			height: 50px
+	.footer-row__title
+		font-size: 10px
+		line-height: 14px
+		color: $text2
+		margin-bottom: 17px
+		text-transform: uppercase
+		display: block
+	#mm-1
+		&::after
+			display: none
+		.mm-navbar
+			display: none
+	#mMenu
+		position: fixed
+		width: 320px
+		height: 100%
+		max-height: calc(100vh - 60px)
+		overflow-y: auto
+		z-index: 999
+		left: 0
+		top: 60px
+		opacity: 1
+		background: #FFFFFF
+		flex-direction: column
+		color: $text
+		transition: all .3s ease
+		transform: translateX(-100%)
+		display: flex!important
+
+		.mm-panel
+			background: #fff
+	.mm-listitem:after
+		left: 0
+	.mm-listitem__text
+		padding: 20px 15px 21px
+		position: relative
+		&.active
+			&:before
+				content: ''
+				position: absolute
+				bottom: 0
+				top: 50%
+				left: 0
+				transform: translateY(-50%)
+				background: $second
+				width: 4px
+				height: 100%
+				opacity: 1
+				transition: all .3s ease
+				z-index: 2
+	.mm-listitem.active
+		&:before
+			content: ''
+			position: absolute
+			bottom: 0
+			top: 50%
+			left: 0
+			transform: translateY(-50%)
+			background: $second
+			width: 4px
+			height: 100%
+			opacity: 1
+			transition: all .3s ease
+			z-index: 2			
+	.mm-btn_next:after
+		transform: unset
+		background-image: url("data:image/svg+xml,%3Csvg width='6' height='10' viewBox='0 0 6 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.5 8.92116L1.21727 9.63843L6.00023 4.85547L1.21727 0.0725098L0.5 0.789783L4.56569 4.85547L0.5 8.92116Z' fill='%234C86A0'/%3E%3C/svg%3E%0A")
+		background-repeat: no-repeat
+		border: 0
+		background-size: 6px 10px
+		width: 6px
+		height: 10px
+		right: 22px
+	.mm-btn_prev:before
+		background-image: url("data:image/svg+xml,%3Csvg width='6' height='10' viewBox='0 0 6 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.5 8.92116L1.21727 9.63843L6.00023 4.85547L1.21727 0.0725098L0.5 0.789783L4.56569 4.85547L0.5 8.92116Z' fill='%234C86A0'/%3E%3C/svg%3E%0A")
+		background-repeat: no-repeat
+		border: 0
+		background-size: 6px 10px
+		width: 6px
+		height: 10px
+		left: 15px
+		transform: rotate(180deg)
+	.mm-navbar
+		background: #fff
+		min-height: 61px
+
+	.header-wrapper
+		padding: 7px 0!important
+	.mm-wrapper
+		overflow: visible
+	.header
+		box-shadow: 0px 5px 10px 10px rgba(0, 0, 0, 0.05)
+		z-index: 9999
+		background: #FFFFFF
+		height: 60px
+		transform: translateY(-100%)
+		margin-top: 60px
+		transition: transform .3s ease
+		&.scrolled
+			position: fixed
+			margin-top: 0
+			transform: translateY(0)
+			.main-btn.open-modal
+				background: $second
+	.header-buttons
+		position: relative
+		overflow: hidden
+	.header-burger
+		display: flex
+		align-items: center
+		justify-content: flex-start
+		margin-right: 12px
+		position: relative
+		overflow: hidden
+	.header-logo img:last-child
+		width: 180px
+	.open-menu
+		width: 30px
+		cursor: pointer
+		position: relative
+		padding-right: 10px
+		span
+			background: $text
+			border-radius: 6px
+			height: 1.5px
+			width: 20px
+			display: flex
+			margin: 5.5px 0
+			transition: all .3s ease
+			&:first-child
+				margin-top: 0
+			&:last-child
+				width: 10px
+				margin-bottom: 0
+	.menu-opened
+		overflow: hidden
+		.bottom-wrapper
+			transform: translateX(0)
+		.open-menu
+			pointer-events: none
+		.mm-wrapper__blocker
+			opacity: 1
+			display: block
+			background: rgba(0,0,0,.3)
+		#mMenu
+			transform: translateX(0)
+		.open-menu
+			span
+				&:nth-child(1)
+					transform: rotate(-45deg) translate(-4px, 5px)
+					width: 23px
+				&:nth-child(2)
+					transform: translateX(-500%)
+				&:nth-child(3)
+					transform: rotate(45deg) translate(-5px, -6px)
+					width: 23px
+	.header-number
+		color: $text!important
+		font-size: 18px
+		line-height: 23px
+		img
+			filter: invert(1)
+			width: 10px
+			margin-left: 10px
+	.main-btn
+		padding: 0 20px
+		height: 40px
+		font-size: 12px
+		line-height: 16px
+	.second-btn
+		padding: 0 30px
+		height: 50px
+		font-size: 14px
+	.search-btn
+		font-weight: normal
+		font-size: 12px
+		line-height: 16px
+		color: $text
+		margin-right: 6px
+		img
+			filter: invert(1)
+	.container
+		--bs-gutter-x: 30px
+	h1,.h1
+		font-size: 36px
+	h2,.h2
+		font-size: 24px
+	h3, .h3
+		font-size: 18px
+	h4, .h4
+		font-size: 14px
+	h5, .h5
+		font-size: 10px
+	p
+		font-size: 14px
+		margin-bottom: 20px
+	.jumbotron-content
+		height: 689px
+		justify-content: center
+		top: unset
+		padding-top: 129px
+		padding-bottom: 240px
+	.jumbotron-subtitle
+		margin-bottom: 8px
+	.jumbotron-title
+		margin-bottom: 22px
+	.jumbotron-nav__wrapper
+		bottom: 155px
+
+	.jumbotron-info__image
+		margin-right: 20px
+		img
+			width: 40px
+	.jumbotron-info
+		.col-md-6
+			&:last-child
+				.jumbotron-info__col
+					padding-left: 15px
+					margin-left: -15px
+					padding-right: 30px
+					margin-right: -30px
+					.jumbotron-info__image
+						margin-left: 15px
+			&:first-child
+				.jumbotron-info__col
+					padding-left: 30px
+					margin-left: -30px
+					padding-right: 15px
+					margin-right: -15px
+	.jumbotron-info__col
+		justify-content: flex-start
+		padding: 23px 0
+		strong
+			margin-top: 0
+	.team-slider .team-slide__image
+		width: 301px
+		height: 301px
+	.section-wrapper, .solutions, .regions, .projects
+		padding: 50px 0
+	.regions-wrapper
+		margin-bottom: -30px
+	.footer
+		padding: 30px 0 20px
+	.strong, .reviews, .useful
+		margin: 50px 0
+	.content .reviews-section
+		padding-bottom: 50px
+	.calc
+		padding-bottom: 50px
+	.solutions .section-header, .strong .section-header, .projects .section-header, .section-header
+		margin-bottom: 32px
+	.news .section-header
+		margin-bottom: 25px
+	.team-slider .team-slide__content
+		padding: 40px
+		width: calc(100% - 301px)
+
+	.promises-wrapper ol li
+		font-size: 18px
+	.team-slider .team-slide__description,
+	.regions .section-description,
+	.regions-phone, .solutions-item__content ul li a
+		font-size: 14px
+	.strong-description,
+	.regions-city
+		font-size: 12px
+	.jumbotron-nav__slide, .section-link,
+	.news-item__type, .news-item__date, .footer-address,
+	.footer-info, .footer .container+.container,
+	.footer-made a
+		font-size: 12px
+
+	.footer-info, .footer-social
+		margin-top: 10px
+	.footer-title, .footer-col ul li a
+		margin-bottom: 20px
+		font-size: 12px
+	.footer .container+.container
+		margin-top: 0
+		padding-bottom: 0
+		padding-top: 20px
+	.promises-wrapper ol li
+		padding-top: 24px
+		padding-bottom: 26px
+		&::before
+			margin-top: 3px
+			margin-right: 21px
+
+	.team
+		margin-bottom: 49px
+		.slick-next
+			width: 19px
+			height: 33px
+			right: 30px
+		.slick-prev
+			width: 19px
+			height: 33px
+			left: 30px
+			z-index: 9
+	.team-slider .team-slide__header
+		margin-top: -3px
+	.team-slider .team-slide__description
+		margin-top: 23px
+	.promises-panel
+		padding: 25px 30px
+		p
+			margin-bottom: 29px
+		a
+			font-size: 14px
+			margin-bottom: 0
+	.solutions-item__content
+		padding: 30px
+		top: 75%
+	.solutions-item__title:before
+		left: -30px
+	.strong-item
+		padding: 20px
+		.strong-icon
+			margin-bottom: 19px
+			img
+				height: 50px
+	.news
+		padding-top: 7px
+		margin-bottom: 50px
+	.news .section-link
+		top: -4px
+	.news-item__description, .footer-col
+		margin-top: 8px
+	.footer-logo
+		img
+			width: 165px
+	.news
+		margin-bottom: 20px
+	section.inner-title, .content-description
+		margin-bottom: 30px
+	section.content::before, section.content::after
+		display: none
+	.category+.content-description
+		margin-top: 50px
+	.video-slider__back
+		width: calc(160vw + (185px * 2))
+	.video-slider__back .video-item
+		margin: 0 100px
+	.description-text a
+		font-size: 14px
+	.section-tabs__nav
+		margin-bottom: 30px
+		background: transparent
+	.filter-wrapper .filter
+		ul
+			li
+				font-size: 16px
+	.category-btn.main-btn
+		padding: 0 30px
+@media only screen and (max-width : 1023px)
+	.category-bottom .category-item
+		margin-top: 0
+	.card-subtitle
+		margin-bottom: 20px
+	.card-prices
+		margin-bottom: 20px
+	.article-content ul li, .article-content ol li
+		font-size: 12px
+		margin-bottom: 10px
+	.article-content ol li::before
+		font-size: 12px
+		margin-top: 0
+	.article-content ol, .article-content ul
+		margin-bottom: 20px
+	.article-content>img.float-left, .article-content>img.float-right
+		margin-bottom: 20px
+	.article+.products
+		margin-top: 30px
+	.products+.article
+		margin-top: 30px
+	.article-content table th, .article-content table td
+		font-size: 12px
+		padding: 15px
+	.article-content table
+		margin: 20px 0
+	
+	.article-content .h2
+		margin-top: 30px
+		margin-bottom: 20px
+		font-size: 18px
+	.article-content>img
+		margin-bottom: 20px
+	.accordion-header__selected
+		font-size: 14px
+	.projects .filter
+		border-bottom: 1px solid rgba(76,134,160,.3)
+	.category-item__description
+		display: none
+	.regions.with-bg
+		padding: 30px 0
+	.regions.with-bg .section-description
+		max-width: 100%
+	.regions.with-bg .section-title
+		margin-bottom: 15px
+	.regions.with-bg .section-description
+		margin-bottom: 20px
+	.solutions .section-description
+		margin-top: 20px
+		p
+			font-size: 14px
+	.setup .section-tabs__nav
+		margin-bottom: 30px
+	.filter
+		ul
+			li
+				font-size: 16px
+				padding-bottom: 10px
+				margin-right: 20px
+	.regions .section-description
+		max-width: 100%
+	.useful
+		margin: 30px 0
+	.section-tabs__nav
+		margin-bottom: 20px
+	.series-item
+		margin-bottom: 30px
+	.filter-wrapper:last-child
+		margin-bottom: 3px
+	.video-slider__back
+		display: none
+	.video-content
+		padding-left: 30px
+		bottom: 30px
+		font-size: 16px
+	.video-image::after
+		display: none
+	.product-group
+		grid-template-columns: repeat(4,1fr)
+	.consult
+		margin: 30px 0
+	section.inner-title+section
+		margin-top: 30px
+	.section-back
+		display: none
+	.compare-elem__data::before, .compare-elem__data::after
+		margin-left: -15px
+	.compare-legend
+		width: 250px
+	.compare-elem__legend
+		width: 250px
+		min-width: 250px
+	.compare-elem__data
+		padding: 15px
+	.compare-legend ul li
+		padding: 15px 15px 15px 0
+	.with-bg
+		padding: 30px 0
+	section.content
+		margin-bottom: 50px
+	.content-description p+p
+		margin-top: 10px
+	.category .slick-next,
+	.category .slick-prev
+		width: 10px
+		background-repeat: no-repeat
+		background-position: center
+	.category .slick-prev
+		left: 10px
+	.category .slick-next
+		right: 10px
+	.category .category-slide
+		height: 50vw
+	.category
+		flex-direction: column-reverse!important
+		margin: 20px 0!important
+	.category-title
+		margin-bottom: 10px
+	.category-content
+		width: 100%
+		margin: 0!important
+		padding: 20px!important
+		min-height: unset
+		top: unset
+	.category-info
+		width: 100%
+		height: unset
+		padding: 0!important
+		margin: 0!important
+	section.inner-title, .content-description
+		margin-bottom: 20px
+	.row-news
+		margin-top: 30px
+		margin-bottom: 30px
+	.load-more
+		margin-top: 0
+	.breadcrumbs
+		margin-top: 30px
+	.search-btn
+		font-size: 0
+		margin-right: -10px
+	.header-buttons>*+*
+		margin-left: 20px
+	.jumbotron-content
+		min-height: 551px
+		height: unset
+		padding-bottom: 175px
+		justify-content: flex-start
+		top: unset
+		padding-top: 107px
+	.jumbotron-nav__wrapper
+		bottom: 91px
+	.jumbotron-nav
+		.slick-list
+			display: none!important
+		.slick-dots
+			display: flex
+			justify-content: flex-start
+			margin: 0
+			padding: 0
+			bottom: 0
+			li
+				padding: 0
+				margin: 0
+				width: unset
+				height: unset
+				&.slick-active
+					button
+						height: 4px
+						background: $second
+				button
+					padding: 0
+					width: 30px
+					height: 1px
+					background: #CCCCCC
+					margin-right: 10px
+					border-radius: 0
+					&::before
+						display: none
+	.jumbotron-info__col
+		position: relative
+		z-index: 2
+		margin: 0 -15px
+		padding: 21px 15px 21px 15px
+		background: rgba(36, 55, 70, 0.5)
+		&:hover
+			background: rgba(76, 134, 160, 0.5)
+		strong
+			font-size: 14px
+			line-height: 18px
+		span
+			font-size: 10px
+			line-height: 13px
+	.jumbotron-info__image
+		margin-right: 10px
+		img
+			width: 30px
+	.jumbotron-info
+		.col-md-6
+			.jumbotron-info__col
+				margin-left: -30px
+				padding-left: 30px
+			&:nth-child(2)
+				.jumbotron-info__col
+					margin-right: -30px
+					padding-right: 30px
+					margin-left: -15px
+	.section-wrapper, .solutions, .regions, .projects
+		padding: 30px 0
+	.team
+		margin-bottom: 0
+	.team-slider .team-slide__image
+		width: 50%
+		height: unset
+	.team-slider .team-slide__content
+		width: 50%
+		padding: 30px
+	.team .slick-next
+		right: 20px
+	.team .slick-prev
+		left: 20px
+	.promises-panel p
+		margin-bottom: 18px
+	.solutions-wrapper
+		&:not(.active)
+			& > *
+				display: none
+				&:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4)
+					display: block
+			& + .solutions-more
+				display: flex!important
+	.solutions-more
+		margin-top: 30px
+		display: none!important
+		margin-bottom: 20px
+	.strong, .reviews
+		margin: 30px 0
+	.news .section-link
+		top: -1px
+	.news .section-header
+		margin-bottom: 35px
+	.overlow-row
+		flex-wrap: nowrap
+		max-width: calc(100% + 75px)
+		margin-right: -30px
+		overflow-x: auto
+		margin-left: -45px
+		padding-left: 30px
+		padding-bottom: 20px
+		margin-bottom: -20px
+		& > *
+			width: 308px
+	.regions-wrapper
+		margin-top: 30px
+	.inner-page .jumbotron .jumbotron-content
+		height: unset
+		min-height: 500px
+		padding-bottom: 100px
+	section
+		margin: 30px 0
+	.category-bottom
+		background: #f5f5f5
+		margin-top: 0!important
+		padding: 20px 20px 0
+		margin-bottom: -20px
+		flex-wrap: wrap
+	.category-item
+		align-items: center
+		margin-bottom: 20px
+		.category-item__title
+			margin-bottom: 0
+	.filter-wrapper:last-child
+		margin-bottom: 20px
+	.article-content 
+		p, ul li, ol li
+			font-size: 16px
+	.search-row
+		margin-bottom: 30px
+	.search-result__title
+		font-size: 18px
+	.search-result__link
+		font-size: 14px
+	.search-results .search-result::before
+		margin-top: 2px
+	.content .reviews-section
+		padding-bottom: 30px
+	.calc
+		padding-bottom: 30px
+@media only screen and (max-width : 991px)
+	.product-group
+		grid-template-columns: repeat(3,1fr)
+@media only screen and (max-width : 767px)
+	.review-item
+		flex-direction: column
+		margin-bottom: 30px
+	.review-item__image
+		width: 100%
+		margin-right: 0
+		margin-bottom: 20px
+	.review-item__content
+		width: 100%
+	.review-item__header
+		flex-direction: column
+		justify-content: flex-start
+		align-items: flex-start
+		margin-bottom: 10px
+	.review-item__link
+		margin-top: 10px
+	.members 
+		.h3
+			margin-top: 10px
+			margin-bottom: 20px
+		p + .member
+			margin-top: 10px
+	.member+p
+		margin-top: 20px
+	.member
+		margin-top: 20px
+		margin-bottom: 0
+	.clients-title
+		margin-top: 20px
+		margin-bottom: 30px
+	.clients-image
+		margin-bottom: 10px
+	.clients-item+p
+		margin-top: 20px
+	.clients-name
+		font-size: 16px
+	.search-row .form-group input
+		padding: 15px
+		height: 40px
+		font-size: 14px
+	.search-row .form-group button
+		width: 40px
+		img
+			width: 15px
+			height: 15px
+	.search-result__title
+		font-size: 16px
+	.search-result__link
+		font-size: 12px
+		line-height: 1.2
+	.search-row
+		margin-bottom: 20px
+	.series-overlay
+		display: none
+	.series-info__col a
+		font-size: 12px
+	.series-info__col a+a
+		margin-top: 5px
+	.modal.vacancy-modal .vacancy-form .form-group
+		padding: 0
+	.modal.vacancy-modal .vacancy-form textarea
+		min-height: 120px
+	.modal.vacancy-modal form .select-group::after
+		right: 15px
+	.modal.vacancy-modal .vacancy-form .form-group label
+		min-height: unset
+		&:empty
+			display: none
+	.accordion-footer 
+		p
+			order: 1
+			margin: 0 auto 10px auto!important
+		.prev-step
+			order: 2
+		.next-step
+			order: 3
+			margin: 0 auto
+	section.content .container::before
+		display: none
+	.category-bottom .category-item
+		width: 100%
+	.regions.with-bg .section-description
+		font-size: 14px
+	.solutions-item .solutions-item__image:after
+		opacity: 0.8
+	.accordion-header__selected
+		font-size: 12px
+	section.content
+		margin-bottom: 30px
+	.category+.content-description
+		margin-top: 0
+	.regions-wrapper
+		margin-bottom: -15px
+	.regions-phone,
+	.regions-city, .strong-description
+		margin-bottom: 0
+	.regions-address
+		font-size: 12px
+	.footer-policy
+		margin-top: 12px
+	.regions-item
+		padding: 15px
+		margin-bottom: 15px
+		height: unset
+	.img-wrapper::before
+		opacity: 0!important
+	.img-wrapper img
+		filter: unset!important
+	.strong-item:hover .strong-icon img
+		opacity: 0
+	.strong-icon img:last-child
+		opacity: 1
+	.promises
+		display: none
+	.setup .section-tabs__nav
+		margin-bottom: 20px
+	.construction-list
+		max-height: 300px
+	.docs-item
+		padding: 15px
+		font-size: 14px
+	.section-tabs__nav li
+		padding: 10px 20px
+	.table-info
+		margin-bottom: 20px
+	.complect-item
+		flex-direction: column
+	.complect-image
+		width: 100%
+		padding-top: 75%
+	.complect-text
+		width: 100%
+		padding: 15px 0 0
+	.construction-image
+		margin-right: 0
+	.construction-list
+		margin-left: 0
+		ul
+			padding: 10px
+			li
+				font-size: 14px
+				&::before
+					font-size: 12px
+					margin-top: 2px
+	.calc-toggle
+		margin-bottom: 10px
+		flex-direction: column
+		align-items: flex-start
+	.filter ul
+		margin-left: -30px
+		padding-left: 30px
+	.projects
+		.filter ul	
+			border-bottom: 0	
+	.main-btn:hover img
+		margin-right: 0
+	.header.scrolled .main-btn.open-modal
+		background: none
+	.prices .section-description
+		margin: 20px 0
+	.prices .section-description .warning
+		font-size: 12px
+	.special-content
+		flex-direction: column
+		padding: 20px
+		align-items: flex-start
+		.second-btn
+			margin-top: 20px
+	.special-description
+		font-size: 12px
+	.prices .compare-wrapper
+		border-right: 1px solid rgba(36, 55, 70, 0.15)
+	.accordion-content p
+		font-size: 12px
+	.design-wrapper
+		width: auto
+	.design-item
+		margin-bottom: 20px
+	.design-content
+		margin-top: 10px
+	.design-description .warning
+		font-size: 14px
+		line-height: 1.2
+	.section-tabs__nav
+		margin-left: -30px
+		margin-right: -30px
+		max-width: calc(100% + 60px)
+		padding-left: 30px
+		&::after
+			content: ''
+			min-height: 1px
+			min-width: 30px
+	.series-value
+		font-size: 14px
+	.series-description
+		font-size: 12px
+	.series-item
+		margin-bottom: 20px
+	.advantages
+		.promises-nav
+			display: block
+		.promises-panel
+			display: none
+			&.active
+				display: block
+	.advantages .promises-wrapper ol
+		margin-left: 0
+	.advantages .promises-nav-content
+		font-size: 16px
+	.series-info
+		flex-wrap: wrap
+	.series-info__col
+		width: 100%
+		flex: unset
+		margin-bottom: 15px	
+		&:last-child
+			margin-bottom: 0
+	.series-subtitle
+		margin-bottom: 5px
+	.series-description
+		margin-bottom: 20px
+	.series-content
+		width: 100%
+		padding: 25px 15px
+		background: #F5f5f5
+		&:before, &::after
+			display: none
+	.series-image
+		width: 100%
+	.description-content
+		margin-bottom: 20px
+	.description-text a
+		font-size: 12px
+		img
+			max-width: 6px
+			margin-left: 10px
+	.description-images .slick-prev
+		left: 10px
+	.description-images .slick-next
+		right: 10px
+
+	.promises-wrapper
+		width: calc(100% + 60px)
+		max-width: unset
+	.accordion-footer
+		margin: 0 15px
+		padding: 15px 0
+	.product-group__item
+		padding: 15px 0
+	.accordion-skip
+		display: none
+	.attach-label
+		padding: 15px
+	.calc .form-group
+		margin-bottom: 15px
+	.calc-response
+		margin-top: 30px
+		padding: 15px
+	.response-form .form-group
+		margin-top: 15px
+		margin-bottom: 0
+	.response-additional__header
+		margin-top: 15px
+	.accordion-footer 
+		flex-direction: column
+		justify-content: flex-start
+		.next-step
+			margin-right:  auto
+			margin-top: 10px
+		p 
+			font-size: 10px
+	.product-group
+		grid-template-columns: repeat(2,1fr)
+	.map-wrapper
+		position: relative
+		height: 400px
+	.contact-col ul
+		li
+			&:nth-child(1)
+				order: 1
+			&:nth-child(2)
+				order: 3
+			&:nth-child(3)
+				order: 2
+			&:nth-child(4)
+				order: 4
+	.map-legend
+		margin: 30px 15px 30px
+		flex: unset
+	.map
+		display: flex
+		flex-direction: column-reverse
+	.map-item
+		padding: 15px
+	.map-header
+		padding: 15px
+	.contact-col ul li
+		width: 100%
+		margin-bottom: 15px
+	.contact-col__title
+		margin-bottom: 10px
+	.contact-title
+		margin-bottom: 20px
+	.accordion-header
+		padding: 15px
+		padding-right: 40px
+	.accordion-arrow
+		right: 15px
+	.accordion-content
+		padding: 15px 0
+		margin: 0 15px
+		font-size: 12px
+	.accordion-header,
+	.contact-col__content
+		font-size: 14px
+	.accordion
+		margin-bottom: 20px
+	.accordion-title
+		margin-bottom: 10px
+	.consult
+		padding: 20px
+		.consult-wrapper
+			justify-content: space-between
+			flex-wrap: wrap
+			align-items: flex-start
+		.consult-image
+			margin-right: 15px
+			margin-bottom: 0
+		.consult-text
+			width: calc(100% - 15px - 50px)
+			margin-right: 0
+			margin-bottom: 20px
+		.consult-btn
+			width: 100%
+			.second-btn
+				width: 100%
+	section.inner-title+section
+		margin-top: 20px
+	.article-content p
+		margin-bottom: 15px
+	.article-image
+		margin-bottom: 20px
+
+	.card-info
+		margin-top: 20px
+	.card-calc ul
+		flex-direction: column
+		justify-content: flex-start
+		align-items: flex-start
+		li + li
+			margin-top: 20px
+	.card-price .info
+		font-size: 10px
+		margin-top: 5px
+	.card-spec__title
+		margin-top: 30px
+	.card-prices
+		flex-direction: column
+		align-items: flex-start
+		justify-content: flex-start
+	.card-sale
+		margin-top: 20px
+	.prices
+		.compare-wrapper
+			margin: 0
+			width: 100%
+			max-width: 100%
+	.compare-wrapper
+		margin: 0 -30px
+		width: calc(100% + 60px)
+		max-width: calc(100% + 60px)
+	.compare-legend ul li
+		padding: 10px
+		font-size: 12px
+	.compare-elem__legend
+		width: 150px
+		min-width: 150px
+	.compare-elem__data
+		padding: 10px		
+	.compare-legend
+		width: 150px
+	.compare-title
+		font-size: 12px
+		margin-bottom: 10px
+	.compare-text P
+		font-size: 10px
+	.compare-elem__data
+		width: 200px
+		min-width: 200px
+	.compare-elem__data::before, .compare-elem__data::after
+		width: 200px
+		margin-left: -10px
+	.compare-row:first-child .compare-elem__data .compare-title
+		font-size: 14px
+	.compare-row:last-child .compare-elem__data
+		padding-bottom: 60px
+	.compare-elem__data::before
+		background-image: linear-gradient(360deg,#4c86a0 0,#4c86a0 40px,rgba(76,134,160,.3) 40px,rgba(76,134,160,.3) 100%)
+	.compare-elem__data::after
+		height: 40px
+		font-size: 10px
+	.review
+		flex-direction: column	
+	.review-image
+		margin-bottom: 70px
+		width: 100%
+	.review-content
+		width: 100%
+		padding: 0
+	.review-image
+		margin-right: 0
+	.review-text
+		margin-bottom: 20px
+	.review-content .main-btn
+		min-height: 40px
+	.main-news .news-item__content
+		left: 20px
+		padding-right: 20px
+		bottom: 20px
+	.main-news .news-item__label
+		top: 20px
+		left: 20px
+	.row-news
+		flex-direction: column
+	.row-news .news-item__image
+		width: 100%
+		padding-top: 75%
+	.row-news .news-item__content
+		width: 100%
+	.menu-opened .open-menu span:nth-child(2)
+		transform: translateX(500%)
+	.modal-inner
+		min-width: unset!important
+	.modal.search-modal .modal-inner
+		min-width: 100%!important
+		padding: 10px 0
+		input
+			font-size: 16px
+		button
+			img
+				width: 20px
+	.mobile-phone
+		display: flex
+		align-items: center
+		justify-content: center
+	.header-contact
+		display: none
+	.header-burger
+		display: none
+	.header-contacts__wrapper
+		display: none
+	.header-buttons
+		.header-burger
+			display: flex
+			margin-right: -10px
+			height: 30px
+		.main-btn, .search-btn
+			font-size: 0
+			background: none
+			padding: 0
+			img
+				display: flex
+				width: 20px
+				min-width: 20px
+	.header-logo
+		img
+			max-width: 138px
+	.header
+		.container
+			--bs-gutter-x: 15px
+	.open-menu span:last-child
+		margin-left: auto
+	h1,.h1
+		font-size: 24px
+	h2,.h2
+		font-size: 24px
+	h3, .h3
+		font-size: 18px
+	h4, .h4
+		font-size: 14px
+	h5, .h5
+		font-size: 10px
+	p, .category-description
+		font-size: 12px
+		line-height: 1.5
+		margin-bottom: 15px
+	.jumbotron-description
+		font-size: 12px
+		line-height: 1.5
+	.jumbotron-title
+		-webkit-line-clamp: 4
+		margin-bottom: 14px
+	.category-description
+		margin-bottom: 10px
+	.category-list li 
+		&::before
+			margin-top: -1px
+		a
+			font-size: 12px
+			line-height: 1.2
+	.category-btn
+		min-height: 40px
+
+	.category-item__title
+		font-size: 12px
+	.category-item__description
+		font-size: 10px
+	.jumbotron-description
+		-webkit-line-clamp: 4
+		margin-bottom: 21px
+	.second-btn
+		height: 40px
+		padding: 0 20px
+		font-size: 12px
+		line-height: 16px
+		img
+			width: 6px
+			margin-left: 10px
+	.jumbotron-content
+		min-height: 645px
+		padding-bottom: 260px
+	.jumbotron-info
+		bottom: 28px
+	.jumbotron-wrapper
+		margin-bottom: -28px
+	.inner-page .jumbotron .jumbotron-content
+		padding-bottom: 210px
+		display: flex
+		flex-direction: column
+		justify-content: center
+	.jumbotron-nav__wrapper
+		bottom: 180px
+	.jumbotron-info__col
+		align-items: flex-start
+		padding-top: 15px
+		padding-bottom: 19px
+		padding-left: 30px
+		padding-right: 30px
+		margin: 0 -30px!important
+	.jumbotron-info__image
+		margin-top: 3px
+		img
+			min-width: 30px
+	.jumbotron-info .col-md-6:last-child .jumbotron-info__col
+		margin-left: -30px
+		padding-left: 30px
+		.jumbotron-info__image
+			margin-left: 0
+	.team-slider .team-slide
+		flex-direction: column
+	.team-slider .team-slide__image
+		width: 100%
+		height: calc(100vw - 60px)
+		img
+			width: 100%
+	.team-slider .team-slide__content
+		width: 100%
+		padding: 20px
+	.team .slick-next, .team .slick-prev
+		top: calc(100vw / 2 - 30px)
+		transform: translateY(-50%)
+	.team-slider .team-slide__description
+		margin-top: 10px
+	.promises-nav
+		display: none
+	.promises-content a
+		display: none
+	.promises-panel
+		display: flex
+		min-height: unset
+		flex-direction: column
+		padding: 21px 30px
+		margin-left: 0
+		background: none
+		counter-increment: my-awesome-counter
+		.promises-content
+			display: none
+			flex-direction: column
+		.promises-title
+			display: flex
+			font-size: 18px
+			&::before
+				content: "0"counter(my-awesome-counter)
+				color: $second
+				font-weight: bold
+				font-size: 14px
+				line-height: 150%
+				letter-spacing: -0.02em
+				margin-top: 4px
+				margin-right: 16px
+				width: 16px
+		&.active
+			background: #FFF
+			.promises-content
+				display: flex
+				padding-left: 32px
+				margin-top: 10px
+				p
+					font-size: 14px
+					margin-bottom: 10px
+	.promises-wrapper
+		min-height: unset
+		margin-left: -30px
+		margin-right: -30px
+		counter-reset: my-awesome-counter
+	.series-link
+		display: flex
+		margin-top: 20px
+	.product-price .old
+		color: $accent
+	.product-price .old
+		color: $second
+	.prices .compare-elem__data
+		min-width: 95px
+		width: 94px
+	.prices .compare-elem__data::before
+		width: 94px
+		display: none
+	.prices .compare-row::after
+		display: none
+	.product-btn
+		background: $accent
+		color: #fff
+	.section-link
+		display: none
+	.solutions-wrapper
+		& > *
+			width: 100%
+	.solutions-item__content
+		padding: 26px
+	.solutions-item__content
+		top: unset!important
+		bottom: 0
+		height: unset
+		ul
+			opacity: 1
+	.solutions-item__content > a
+		margin-bottom: 10px
+		&:last-child
+			margin-bottom: 0
+			margin-top: 10px
+	.solutions-item__image
+		padding-top: calc(75% + 1px)
+	.strong
+		margin-top: 36px
+		margin-bottom: 10px
+	.strong-item
+		padding: 0
+		background: none!important
+	.reviews-slider
+		.slick-dots
+			display: flex
+			justify-content: flex-start
+			margin: 0
+			padding: 0
+			bottom: -30px
+			left: 15px
+			li
+				padding: 0
+				margin: 0
+				width: unset
+				height: unset
+				&.slick-active
+					button
+						height: 4px
+						background: $second
+				button
+					padding: 0
+					width: 30px
+					height: 1px
+					background: #CCCCCC
+					margin-right: 10px
+					border-radius: 0
+					&::before
+						display: none
+	.products-slider, .projects-slider
+		.slick-dots
+			display: flex
+			justify-content: flex-start
+			margin: 0
+			padding: 0
+			bottom: -30px
+			left: 30px
+			li
+				padding: 0
+				margin: 0
+				width: unset
+				height: unset
+				&.slick-active
+					button
+						height: 4px
+						background: $second
+				button
+					padding: 0
+					width: 30px
+					height: 1px
+					background: #CCCCCC
+					margin-right: 10px
+					border-radius: 0
+					&::before
+						display: none
+	.strong-slider
+		padding-right: 30px
+		margin-bottom: 40px!important
+		.slick-list
+			padding: 0
+			margin: 0 15px
+		.slick-dots
+			display: flex
+			justify-content: flex-start
+			margin: 0
+			padding: 0
+			bottom: -20px
+			left: 15px
+			li
+				padding: 0
+				margin: 0
+				width: unset
+				height: unset
+				&.slick-active
+					button
+						height: 4px
+						background: $second
+				button
+					padding: 0
+					width: 30px
+					height: 1px
+					background: #CCCCCC
+					margin-right: 10px
+					border-radius: 0
+					&::before
+						display: none
+	.news .section-link
+		display: flex
+		margin-top: 26px
+	.news .section-header
+		flex-direction: column
+		justify-content: flex-start
+		align-items: flex-start
+		margin-bottom: 31px
+	.overflow-row
+		& > *
+			width: 193px
+	.regions::after
+		display: none
+	footer.footer
+		background-size: 555px 260px
+		background-position: calc(100% + 203px) -160px
+		&::before
+			width: 6px
+			height: 145px
+			right: 16px
+			bottom: 118px
+			background-size: cover
+		&::after
+			width: 124px
+			height: 286px
+			background-size: cover
+			bottom: 51px
+			right: -33px
+		.container:first-child
+			.row
+				& > *
+					&:nth-child(1)
+						order: 5
+						position: relative
+						padding-top: 30px
+						&::after
+							position: absolute
+							top: 0
+							content: ''
+							width: calc(100% - 30px)
+							border-top: 1px solid rgba(255,255,255,.25)
+					&:nth-child(2)
+						order: 1
+						width: 50%
+					&:nth-child(3)
+						order: 2
+						width: 50%
+					&:nth-child(4)
+						order: 3
+						width: 50%
+					&:nth-child(5)
+						order: 4
+						width: 50%
+	.footer-made
+		justify-content: flex-start
+		margin-top: 10px
+	.footer-social li
+		margin-bottom: 0
+	.footer .container+.container::after
+		width: calc(100% - 60px)
+	.header-wrapper
+		padding: 10px 0!important
+	.filter-wrapper+div
+		margin-top: 30px
+	.project-content
+		padding: 0 15px
+		bottom: 15px
+	.project-location
+		font-size: 12px
+	.article-content 
+		p, ul li, ol li
+			font-size: 14px
+	.project-spec
+		margin-top: 0
+		margin-bottom: 20px
+@media only screen and (max-width : 479px)
+	.main-news .news-item__content p
+		display: none
+	.row-news .news-item__title
+		margin-bottom: 10px
+@media only screen and (max-width : 340px)
+	.inner-page .jumbotron .jumbotron-content
+		padding-bottom: 230px
+/*==========  Mobile First  ==========*/
+
+@media only screen and (min-width : 480px)
+	/**/
+@media only screen and (min-width : 768px)
+	/**/
+@media only screen and (min-width : 1024px)
+	.projects-filter.filter-wrapper
+		height: unset
+		margin-bottom: 30px
+		.filter 
+			transform: unset
+			margin-top: 0
+			border-bottom: 0
+			ul
+				flex-wrap: wrap
+				li
+					margin-bottom: 20px
+					padding-bottom: 10px
+@media only screen and (min-width : 1440px)
+	.container
+		max-width: 1410px
+		margin: 0 auto
+	.header-contact
+		margin-top: -7px
+	.jumbotron-info__image
+		margin-left: 14px
+	.jumbotron-info
+		.col-md-6
+			&:last-child
+				.jumbotron-info__col
+					.jumbotron-info__image
+						margin-left: -15px
+	.inner-page
+		.header-nav:after
+			display: none
+		.header
+			background: $text
+			position: relative
+		.header-wrapper
+			position: relative
+			&::before
+				content: ''
+				width: calc(100% - 30px)
+				left: 15px
+				height: 1px
+				position: absolute
+				bottom: -20px
+				border-bottom: 1px solid rgba(76, 134, 160, 0.3)

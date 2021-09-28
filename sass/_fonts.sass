@@ -1,0 +1,24 @@
+// font-weight helper:
+
+// 100 Extra Light or Ultra Light;
+// 200 Light or Thin; 300 Book or Demi;
+// 400 Regular or Normal;
+// 500 Medium;
+// 600 Semibold or Demibold;
+// 700 Bold;
+// 800 Black or Extra Bold or Heavy;
+// 900 Extra Black or Fat or Ultra Black
+
+
+@mixin font($f-name, $f-style, $f-weight, $f-url)
+	@font-face
+		font-family: $f-name
+		font-style: $f-style
+		font-weight: $f-weight
+		src: url($f-url) format('opentype')
+
+@include font('TTProstoSans', normal, 900, '../fonts/TT Prosto Sans Black.otf')
+@include font('TTProstoSans', normal, 700, '../fonts/TT Prosto Sans Bold.otf')
+@include font('TTProstoSans', normal, 400, '../fonts/TT Prosto Sans Regular.otf')
+@include font('TTProstoSans', normal, 300, '../fonts/TT Prosto Sans Light.otf')
+@include font('TTProstoSans', normal, 100, '../fonts/TT Prosto Sans Thin.otf')
